@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="cart-catalog.css" />
+    <title>Корзина</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="./index.html"
+          ><img src="img/лого.png" class="logo" alt="логотип"
+        /></a>
+        <nav class="navigation">
+          <ol>
+            <li><a href="#">О НАС</a></li>
+            <li><a href="./catalog.html">КАТАЛОГ</a></li>
+            <li><a href="#">КОНТАКТЫ</a></li>
+            <li><a href="#">ДОСТАВКА</a></li>
+            <li>
+              <a href="#">
+                <img src="img/лк.png" alt="лк" />
+              </a>
+            </li>
+            <li>
+              <a href="./cart.html">
+                <img src="img/корзина.png" alt="корзина" />
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="cart-header">
+        <h1 class="cart-title">ВАША КОРЗИНА</h1>
+      </div>
+
+      <div class="cart-main">
+        <div class="cart-items-section">
+          <button class="clear-cart-btn">(4) очистить корзину</button>
+
+          <article class="cart-item">
+            <img src="img/cart-img-1.png" alt="товар 1" class="cart-item-img" />
+            <div class="cart-item-info">
+              <div class="cart-item-name">
+                <p>VORONKA</p>
+                <p>ваза</p>
+              </div>
+              <div class="cart-item-quantity">
+                <button class="quantity-minus">
+                  <img src="img/minus.png" alt="минус" />
+                </button>
+                <p class="quantity-num">2</p>
+                <button class="quantity-plus">
+                  <img src="img/plus.png" alt="плюс" />
+                </button>
+              </div>
+            </div>
+            <div class="cart-item-right">
+              <img src="img/trash.png" alt="удалить" class="cart-item-delete" />
+              <p class="cart-item-price">7000 р.</p>
+            </div>
+          </article>
+
+          <article class="cart-item">
+            <img src="img/cart-img-2.png" alt="товар 2" class="cart-item-img" />
+            <div class="cart-item-info">
+              <div class="cart-item-name">
+                <p>ZIGZAG</p>
+                <p>светильник</p>
+              </div>
+              <div class="cart-item-quantity">
+                <button class="quantity-minus">
+                  <img src="img/minus.png" alt="минус" />
+                </button>
+                <p class="quantity-num">1</p>
+                <button class="quantity-plus">
+                  <img src="img/plus.png" alt="плюс" />
+                </button>
+              </div>
+            </div>
+            <div class="cart-item-right">
+              <img src="img/trash.png" alt="удалить" class="cart-item-delete" />
+              <p class="cart-item-price">6000 р.</p>
+            </div>
+          </article>
+
+          <article class="cart-item">
+            <img src="img/cart-img-3.png" alt="товар 3" class="cart-item-img" />
+            <div class="cart-item-info">
+              <div class="cart-item-name">
+                <p>YANTAR</p>
+                <p>светильник</p>
+              </div>
+              <div class="cart-item-quantity">
+                <button class="quantity-minus">
+                  <img src="img/minus.png" alt="минус" />
+                </button>
+                <p class="quantity-num">1</p>
+                <button class="quantity-plus">
+                  <img src="img/plus.png" alt="плюс" />
+                </button>
+              </div>
+            </div>
+            <div class="cart-item-right">
+              <img src="img/trash.png" alt="удалить" class="cart-item-delete" />
+              <p class="cart-item-price">6000 р.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="checkout-section">
+          <h2 class="section-title order-title">ОФОРМЛЕНИЕ ЗАКАЗА</h2>
+          <button class="promo-btn">
+            <p>ПРОМОКОД</p>
+            <img src="img/стрелка.png" alt="стрелка вправо" />
+          </button>
+          <div class="price-block">
+            <div class="price-row">
+              <p>СУММА</p>
+              <p>19000 р.</p>
+            </div>
+            <div class="price-row">
+              <p>СКИДКА</p>
+              <p>0 р.</p>
+            </div>
+            <div class="price-row">
+              <p>ИТОГО</p>
+              <p>19000 р.</p>
+            </div>
+          </div>
+
+          <button class="checkout-btn">ПРОДОЛЖИТЬ ОФОРМЛЕНИЕ</button>
+        </div>
+      </div>
+
+      <div class="recent-section">
+        <h2 class="section-title">НЕДАВНО СМОТРЕЛИ</h2>
+        <div class="recent-items">
+          <img src="img/недавн фото1.png" alt="товар" />
+          <img src="img/недавн фото 2.png" alt="товар" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <img src="img/лого2.png" class="logo" alt="логотип" />
+        <div class="contacts2">
+          <div class="contacts">
+            <p>Пн-Вс 10:00-19:00</p>
+            <p>+7(812)000-000-000</p>
+          </div>
+          <nav class="navigation">
+            <ol>
+              <li><a href="#">ОПЛАТА</a></li>
+              <li><a href="#">ДОСТАВКА</a></li>
+              <li><a href="#">КОНТАКТЫ</a></li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
