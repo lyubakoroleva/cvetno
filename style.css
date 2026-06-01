@@ -64,7 +64,7 @@ footer img[alt="Цветно"] {
 
 header {
   background: var(--light-bg);
-  height: 100px;
+  /* height: 100px; */
 }
 
 .header-flex {
@@ -181,6 +181,7 @@ header {
 
 .hero-left .btn {
   margin-top: 50px;
+  font-family: "Advaken", sans-serif;
 }
 
 .hero-right {
@@ -243,6 +244,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
+  font-family: "Advaken", sans-serif;
 }
 
 .catalog-card .btn-top {
@@ -251,6 +253,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
+  font-family: "Advaken", sans-serif;
 }
 
 .products {
@@ -262,6 +265,7 @@ header {
   font-size: 36px;
   margin-bottom: 60px;
   color: var(--text);
+  font-family: "Advaken", sans-serif;
 }
 
 .products-grid {
@@ -332,7 +336,12 @@ footer {
   display: flex;
   gap: 30px;
 }
-
+.href-block {
+  transition: color 0.2s ease;
+}
+.href-block:hover .product-info {
+  color: #d94f52;
+}
 @media (max-width: 900px) {
   .header-flex {
     flex-wrap: wrap;
@@ -675,5 +684,11 @@ footer .container {
     gap: 15px;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  ol a img {
+    height: 5.8vw;
   }
 }

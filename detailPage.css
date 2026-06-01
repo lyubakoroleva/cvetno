@@ -53,6 +53,7 @@ h1,
 h2,
 .btn {
   font-family: "Syncopate", sans-serif;
+  font-family: "Advaken", sans-serif;
 }
 
 h1 {
@@ -69,7 +70,7 @@ h2 {
 
 header {
   background: var(--header-footer-bg);
-  height: 100px;
+  /* height: 100px; */
 }
 
 .header-flex {
@@ -127,6 +128,8 @@ header {
   text-align: center;
   text-transform: uppercase;
   font-family: "Syncopate", sans-serif;
+  font-family: "Advaken", sans-serif;
+
   font-weight: 700;
   font-size: 18px;
   border: none;
@@ -200,6 +203,7 @@ header {
   font-size: 24px;
   font-weight: 400;
   font-family: "Syncopate", sans-serif;
+  font-family: "Advaken", sans-serif;
 }
 
 .product-price {
@@ -268,6 +272,7 @@ header {
   font-weight: 700;
   margin-bottom: 60px;
   color: var(--text);
+  font-family: "Advaken", sans-serif;
 }
 
 .popular-grid {
@@ -345,7 +350,7 @@ footer {
   }
 
   .product-main-image img {
-    height: 400px;
+    /* height: 400px; */
   }
 
   .product-info {
@@ -643,5 +648,10 @@ footer .container {
     gap: 15px;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  ol a img {
+    height: 5.8vw;
   }
 }

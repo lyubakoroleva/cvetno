@@ -1029,3 +1029,9 @@ footer .container {
     font-size: 1.3vw;
   }
 }
+
+@media (max-width: 480px) {
+  ol a img {
+    height: 5.8vw;
+  }
+}
