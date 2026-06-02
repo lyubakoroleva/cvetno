@@ -1,4 +1,3 @@
-// Функция для пересчета общей суммы
 function updateTotal() {
     const cartItems = document.querySelectorAll('.cart-item');
     let total = 0;
@@ -16,7 +15,6 @@ function updateTotal() {
     if (sumElement) sumElement.textContent = total + ' р.';
     if (totalElement) totalElement.textContent = total + ' р.';
     
-    // Обновляем текст кнопки очистки
     const clearBtn = document.querySelector('.clear-cart-btn');
     if (clearBtn) {
         const count = cartItems.length;
@@ -24,7 +22,6 @@ function updateTotal() {
     }
 }
 
-// Функция для обновления количества товара
 function updateQuantity(item, change) {
     const quantityElement = item.querySelector('.quantity-num');
     let currentQuantity = parseInt(quantityElement.textContent);
@@ -36,20 +33,17 @@ function updateQuantity(item, change) {
     }
 }
 
-// Функция для удаления товара
 function deleteItem(item) {
     item.remove();
     updateTotal();
 }
 
-// Очистка всей корзины
 function clearCart() {
     const cartItems = document.querySelectorAll('.cart-item');
     cartItems.forEach(item => item.remove());
     updateTotal();
 }
 
-// Обработчики событий
 function plusHandler(e) {
     const item = e.target.closest('.cart-item');
     updateQuantity(item, 1);
@@ -65,7 +59,6 @@ function deleteHandler(e) {
     deleteItem(item);
 }
 
-// Навешиваем обработчики на все кнопки
 function attachEventListeners() {
     // Кнопки "+"
     document.querySelectorAll('.quantity-plus').forEach(btn => {

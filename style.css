@@ -135,6 +135,12 @@ header {
   background: #ffffff;
   color: var(--text);
   padding: 20px 60px;
+  width: 26.6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 7%;
+  font-size: 22px;
 }
 
 .btn-white:hover {
@@ -182,6 +188,11 @@ header {
 .hero-left .btn {
   margin-top: 50px;
   font-family: "Advaken", sans-serif;
+  width: 18vw;
+  letter-spacing: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-right {
@@ -215,9 +226,10 @@ header {
 .catalog h2 {
   text-align: center;
   font-size: 36px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   color: var(--text);
   font-family: "Advaken", sans-serif;
+  letter-spacing: 7%;
 }
 
 .catalog-grid {
@@ -264,9 +276,10 @@ header {
 .products h2 {
   text-align: center;
   font-size: 36px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   color: var(--text);
   font-family: "Advaken", sans-serif;
+  letter-spacing: 7%;
 }
 
 .products-grid {
@@ -290,7 +303,7 @@ header {
 }
 
 .product-image-wrapper img {
-  width: 80%;
+  /* width: 80%; */
   object-fit: contain;
 }
 
@@ -307,7 +320,7 @@ header {
 }
 
 .product-info span {
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 
 footer {
@@ -344,6 +357,9 @@ footer {
   color: #d94f52;
 }
 @media (max-width: 900px) {
+  .product-card.desktop {
+    display: none;
+  }
   .header-flex {
     flex-wrap: wrap;
     gap: 16px;
@@ -691,5 +707,36 @@ footer .container {
 @media (max-width: 480px) {
   ol a img {
     height: 5.8vw;
+  }
+}
+/* Секция с картой */
+.map-section {
+  margin-top: 120px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.map-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Адаптив для карты */
+@media (max-width: 768px) {
+  .map-image {
+    height: 40vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .map-image {
+    height: 65vw;
   }
 }
