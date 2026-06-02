@@ -280,7 +280,7 @@ header {
 }
 
 .product-image-wrapper {
-  background: var(--card-bg);
+  /* background: var(--card-bg); */
   border-radius: 40px;
   overflow: hidden;
   aspect-ratio: 4 / 5;

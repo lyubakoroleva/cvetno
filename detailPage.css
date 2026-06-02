@@ -194,7 +194,7 @@ header {
 .product-info {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
   font-family: "Roboto", sans-serif;
   color: var(--text);
 }
@@ -202,8 +202,7 @@ header {
 .product-info h1 {
   font-size: 24px;
   font-weight: 400;
-  font-family: "Syncopate", sans-serif;
-  font-family: "Advaken", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .product-price {
