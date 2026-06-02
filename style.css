@@ -548,6 +548,9 @@ header .container {
 }
 
 @media (max-width: 1024px) {
+  .hero-right {
+    flex: auto;
+  }
   .container .logo {
     width: 20vw;
   }
