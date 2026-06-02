@@ -142,6 +142,7 @@ header {
   justify-content: center;
   letter-spacing: 7%;
   font-size: 22px;
+  font-weight: 100;
 }
 
 .btn-white:hover {
@@ -753,21 +754,15 @@ footer .container {
   object-fit: cover;
 }
 
-/* Адаптив для карты */
-@media (max-width: 768px) {
-  .map-image {
-    height: 40vw;
+@media (max-width: 480px) {
+  ol a img {
+    height: 4.5vw;
   }
 }
 
-@media (max-width: 600px) {
-  .map-image {
-    height: 65vw;
-  }
-}
-@media (max-width: 410px) {
-  .catalog h2,
-  .products h2 {
-    font-size: 6vw;
-  }
+.header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

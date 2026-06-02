@@ -1033,6 +1033,13 @@ footer .container {
 
 @media (max-width: 480px) {
   ol a img {
-    height: 5.8vw;
+    height: 4.5vw;
   }
+}
+
+.header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

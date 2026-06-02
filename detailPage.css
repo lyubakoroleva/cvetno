@@ -66,6 +66,8 @@ h2 {
 
 .btn {
   font-weight: 700;
+  letter-spacing: 7%;
+  font-weight: 100;
 }
 
 header {
@@ -132,6 +134,8 @@ header {
 
   font-weight: 700;
   font-size: 18px;
+  letter-spacing: 7%;
+  font-weight: 100;
   border: none;
   cursor: pointer;
   transition:
@@ -272,6 +276,8 @@ header {
   margin-bottom: 60px;
   color: var(--text);
   font-family: "Advaken", sans-serif;
+  letter-spacing: 7%;
+  font-weight: 100;
 }
 
 .popular-grid {
@@ -651,6 +657,13 @@ footer .container {
 }
 @media (max-width: 480px) {
   ol a img {
-    height: 5.8vw;
+    height: 4.5vw;
   }
+}
+
+.header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
