@@ -363,6 +363,12 @@ footer {
 .href-block:hover .product-info {
   color: #d94f52;
 }
+
+@media (max-width: 1280px) {
+  .hero-left .btn {
+    width: 31vw;
+  }
+}
 @media (max-width: 900px) {
   .product-card.desktop {
     display: none;
