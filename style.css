@@ -6,6 +6,7 @@
 }
 .hero-left h1 {
   font-family: "Advaken", sans-serif;
+  letter-spacing: 7%;
 }
 * {
   margin: 0;
@@ -168,21 +169,23 @@ header {
 }
 
 .hero-left {
-  flex: 0 0 40%;
+  /* flex: 0 0 40%; */
 }
 
 .hero-left h1 {
   font-size: 64px;
   line-height: 1.1;
   color: var(--text);
+  font-weight: 100;
 }
 
 .hero-left p {
   margin-top: 40px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   color: var(--text);
   font-weight: 400;
+  max-width: 350px;
 }
 
 .hero-left .btn {
@@ -196,7 +199,7 @@ header {
 }
 
 .hero-right {
-  flex: 0 0 60%;
+  flex: 0 0 65%;
 }
 
 .hero-image-wrapper {
@@ -225,11 +228,12 @@ header {
 
 .catalog h2 {
   text-align: center;
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 30px;
   color: var(--text);
   font-family: "Advaken", sans-serif;
   letter-spacing: 7%;
+  font-weight: 100;
 }
 
 .catalog-grid {
@@ -275,11 +279,12 @@ header {
 
 .products h2 {
   text-align: center;
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 30px;
   color: var(--text);
   font-family: "Advaken", sans-serif;
   letter-spacing: 7%;
+  font-weight: 100;
 }
 
 .products-grid {
@@ -313,6 +318,7 @@ header {
   font-weight: 400;
   color: var(--text);
   line-height: 1.6;
+  font-size: 20px;
 }
 
 .product-info strong {
@@ -364,6 +370,16 @@ footer {
     flex-wrap: wrap;
     gap: 16px;
     justify-content: center;
+  }
+
+  .btn-white {
+    width: 60vw;
+  }
+  .hero-left .btn {
+    width: 85vw;
+  }
+  .hero-left p {
+    max-width: 85vw;
   }
 
   .nav-list {
@@ -438,6 +454,12 @@ footer {
   .hero-left p {
     font-size: 16px;
     margin-top: 20px;
+  }
+  .product-info span {
+    font-size: 16px;
+  }
+  .product-info {
+    font-size: 16px;
   }
 
   .hero-left .btn {
@@ -741,5 +763,11 @@ footer .container {
 @media (max-width: 600px) {
   .map-image {
     height: 65vw;
+  }
+}
+@media (max-width: 410px) {
+  .catalog h2,
+  .products h2 {
+    font-size: 6vw;
   }
 }
