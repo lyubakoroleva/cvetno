@@ -482,8 +482,11 @@ footer {
 
   .btn-white {
     padding: 16px 40px;
+    width: 60vw;
   }
-
+  .hero-left .btn {
+    width: auto;
+  }
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 10px;
